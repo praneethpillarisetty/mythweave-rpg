@@ -8,7 +8,7 @@ description = "Mythweave RPG - an original tabletop-fantasy MVP (packs + scenes 
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-  "toga>=0.4.0"
+  "toga==0.4.9"
 ]
 
 [tool.briefcase]
@@ -27,4 +27,4 @@ long_description = """\
 Mythweave RPG is a data-driven story RPG MVP using JSON packs, with a scene player and a dice roller.
 """
 sources = ["src/mythweave_rpg"]
-requires = ["toga>=0.4.0"]
+requires = ["toga==0.4.9"]
