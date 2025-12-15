@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "packVersion": 1,
+    "id": "whisperglass-vale",
+    "title": "Whisperglass Vale",
+    "description": "A lantern-lit valley where glass reeds sing in the wind. Your choices shape who you trust\u2014and what wakes beneath the marsh."
+  },
+  "startSceneId": "s1_arrival",
+  "scenes": [
+    {
+      "id": "s1_arrival",
+      "title": "Edge of the Vale",
+      "text": "You arrive at Whisperglass Vale as dusk gathers. Pale reeds glitter like spun glass, chiming softly. A worn trail splits: one path hugs the marsh, the other climbs toward distant lights.",
+      "choices": [
+        {
+          "label": "Take the marsh path",
+          "nextSceneId": "s2_marsh_path"
+        },
+        {
+          "label": "Head toward the lights",
+          "nextSceneId": "s3_lantern_hamlet"
+        }
+      ]
+    },
+    {
+      "id": "s2_marsh_path",
+      "title": "Marsh Breath",
+      "text": "Mist curls around your boots. Something stirs under the water\u2014ripples without wind. You spot a broken signpost: 'KEEP TO STONE'.",
+      "choices": [
+        {
+          "label": "Carefully follow stone markers",
+          "nextSceneId": "s4_stone_markers"
+        },
+        {
+          "label": "Cut straight through the reeds",
+          "nextSceneId": "s5_reed_whispers"
+        }
+      ]
+    },
+    {
+      "id": "s3_lantern_hamlet",
+      "title": "Lantern Hamlet",
+      "text": "A small hamlet glows with amber lanterns. A tea-seller watches you from under a hood. A notice board lists: 'Missing: Glass-cutter Jori.'",
+      "choices": [
+        {
+          "label": "Ask about the missing glass-cutter",
+          "nextSceneId": "s6_missing_jori"
+        },
+        {
+          "label": "Buy tea and listen quietly",
+          "nextSceneId": "s7_listen_in"
+        }
+      ]
+    },
+    {
+      "id": "s4_stone_markers",
+      "title": "Safe Steps",
+      "text": "Flat stones form a hidden walkway. The mist thins. You find a silver charm snagged on a reed\u2014warm to the touch.",
+      "choices": [
+        {
+          "label": "Pocket the charm",
+          "nextSceneId": "s8_charm_choice"
+        },
+        {
+          "label": "Leave it and move on",
+          "nextSceneId": "s9_marsh_shrine"
+        }
+      ]
+    },
+    {
+      "id": "s5_reed_whispers",
+      "title": "Songs in the Glass",
+      "text": "The reeds sing\u2014almost like words. Your lantern flame bends sideways. For a heartbeat, you see footprints in the mist that are not yours.",
+      "choices": [
+        {
+          "label": "Call out: 'Who\u2019s there?'",
+          "nextSceneId": "s10_shadow_reply"
+        },
+        {
+          "label": "Stay silent and retreat",
+          "nextSceneId": "s9_marsh_shrine"
+        }
+      ]
+    },
+    {
+      "id": "s6_missing_jori",
+      "title": "The Name on the Board",
+      "text": "The tea-seller says Jori went to the old marsh shrine to cut a mirror-stone and never returned. 'If you go,' they add, 'don\u2019t bargain with echoes.'",
+      "choices": [
+        {
+          "label": "Ask what 'echoes' means",
+          "nextSceneId": "s11_echo_warning"
+        },
+        {
+          "label": "Go to the marsh shrine",
+          "nextSceneId": "s9_marsh_shrine"
+        }
+      ]
+    },
+    {
+      "id": "s7_listen_in",
+      "title": "Tea and Rumors",
+      "text": "You sip smoky tea. Locals whisper about a bell beneath the marsh\u2014ring it, and the vale answers with things you didn\u2019t ask for.",
+      "choices": [
+        {
+          "label": "Seek the bell beneath the marsh",
+          "nextSceneId": "s12_bell_depths"
+        },
+        {
+          "label": "Ignore rumors and find the shrine",
+          "nextSceneId": "s9_marsh_shrine"
+        }
+      ]
+    },
+    {
+      "id": "s8_charm_choice",
+      "title": "The Warm Charm",
+      "text": "The charm hums faintly in your palm. The mist recoils, giving you a clearer view of a stone arch ahead\u2014half-sunk, etched with spiral runes.",
+      "choices": [
+        {
+          "label": "Pass through the arch",
+          "nextSceneId": "s12_bell_depths"
+        },
+        {
+          "label": "Circle around and approach cautiously",
+          "nextSceneId": "s9_marsh_shrine"
+        }
+      ]
+    },
+    {
+      "id": "s9_marsh_shrine",
+      "title": "Shrine of Still Water",
+      "text": "A shrine sits in knee-deep water. Offerings of glass beads glint on the altar. Behind it, a stair descends into darkness where the air feels older than the vale.",
+      "choices": [
+        {
+          "label": "Descend the stair",
+          "nextSceneId": "s12_bell_depths"
+        },
+        {
+          "label": "Leave an offering first",
+          "nextSceneId": "s11_echo_warning"
+        }
+      ]
+    },
+    {
+      "id": "s10_shadow_reply",
+      "title": "Answering Mist",
+      "text": "A voice replies from everywhere at once: 'A trade for a path.' The mist forms a face and smiles without warmth.",
+      "choices": [
+        {
+          "label": "Refuse and back away",
+          "nextSceneId": "s9_marsh_shrine"
+        },
+        {
+          "label": "Ask what it wants",
+          "nextSceneId": "s11_echo_warning"
+        }
+      ]
+    },
+    {
+      "id": "s11_echo_warning",
+      "title": "Do Not Bargain",
+      "text": "A simple rule seems to settle over the world: anything you promise here will be collected. The shrine stair waits, patient as stone.",
+      "choices": [
+        {
+          "label": "Go down to end this cleanly",
+          "nextSceneId": "s12_bell_depths"
+        }
+      ]
+    },
+    {
+      "id": "s12_bell_depths",
+      "title": "The Bell Below",
+      "text": "In a chamber beneath the marsh, a bronze bell hangs over black water. Beside it lies a cracked lantern and a glass-cutter\u2019s tool\u2014Jori\u2019s. The bell sways as if it remembers being rung.\\n\\nEND OF MVP: Add more scenes and encounters next.",
+      "choices": [
+        {
+          "label": "Return to the surface (end)",
+          "nextSceneId": null
+        }
+      ]
+    }
+  ]
+}
